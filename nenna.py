@@ -5,7 +5,7 @@ import urllib.parse
 st.set_page_config(page_title="Nenna Pizzaria", page_icon="🍕", layout="centered")
 
 # Seu número de WhatsApp (com DDI e DDD)
-WHATSAPP_NUMBER = "5532999999999"  # Substitua pelo seu número real
+WHATSAPP_NUMBER = "5532988822076"  # Substitua pelo seu número real
 
 # --- Dados do Cardápio ---
 pizzas = {
@@ -110,4 +110,5 @@ if st.button("✅ Finalizar Pedido", type="primary", use_container_width=True):
         
         # Mostrar botão final ou redirecionar
         st.success("Pedido Montado! Clique abaixo para enviar no WhatsApp:")
+
         st.link_button("📲 ENVIAR AGORA NO WHATSAPP", link_whatsapp, type="secondary")
